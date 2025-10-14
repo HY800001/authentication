@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "张三",
+      "email": "zhangsan@example.com",
+      "role": "管理员",
+      "timestamp": "2025-10-13T07:48:29.675952Z",
+      "encrypted_data": "IRvCWZ9UZYuPAYHjSoqU9xhQy9JGAh1rFh3h/tm1gZsBAFqt+ujXRQm+OGq1eQ2HBsmVBkgvyhRFnGql2xCkTrbxQkkCbjgx5EBpZpY66kIJeiQbP7vFotFvsUGm1PCnA0mp+Q/pri1yKUSOQcQLQWe+CDKCB8ExH3vaLO0CgYbEwit3zRYIQnh7sF5WWmpsWmyARSWAfdtDgOQemhcuvzAwZYoBbppm1V8lfNPHWmAFF6T8fJ3zK+hTprdcPY4y/62R31XjG2IhGaLcLPIBt8sMoBbfqN7/AIxJoAlWZwVc3WyYVSa1OnRx/7kcFnfg2nq15DVHFcfRjRLfBs2bHw=="
+    },
+    {
+      "id": 2,
+      "name": "李四",
+      "email": "lisi@example.com",
+      "role": "用户",
+      "timestamp": "2025-10-13T07:48:29.676950Z",
+      "encrypted_data": "ZMBTsfJi1xL0q1RR5OtpNf6CsIsUEkXXFaxEBes+7bpbQ61OmceVb5iPdX1ck3C3GCY1lNNnwC1CdGtMQVPmJNMo/KBdVbFNjbIq5zE1McGJy0Desf2s43iEC5jXJcE9g5aZf0wQBWPcy8YAI1juRWkQR/bB5b4zPI+EdYEa1e2cPZn4xxy9spL039XT0q6WxuT/0HPKlJpTZw1vMJS0+1tLzYFvgqIU1fLh1l4QqPpN+XixlXTC/Cfm8SUUBQ0MFR/si1sY+qhd5UNF686K1ggzChUMviLxdKgANh/2L06ylElsbxpvdMSxu6Jdfx/Iq50ZSPgLrypF3x2FwaYZuA=="
+    },
+    {
+      "id": 3,
+      "name": "王五",
+      "email": "wangwu@example.com",
+      "role": "用户",
+      "timestamp": "2025-10-13T07:48:29.676950Z",
+      "encrypted_data": "bXUdl7Ft449OX5jRpTzjzOS0eZoDNPuJcRSrTEWXzprpLNEFLywFb46hSsaqyECNB/H1Wmfmg0q4Obb0CXy2rcoMdvTnph7FyqIYUozIs6OHqlvVDpf9/k2HpwEY0FhVuQ4N7o8ivg4BABnVCFYe0+ueYLUnTjoYJNBbpFLdQazNpQ1pqDjocGw9KopDO67hX3sSP1kI1HgquQx/GlEfwuHEFu+j5iVNt71SBSfqf2byfd+sRTZ4ObQu94rVthGwscc6VcTffPgKTZBrh16xugKovU4k0RPmQygcpfBtIsysfOwNoGoNojiO5Qyp83eeMbwPDSoaIebl0R2RPcodEw=="
+    }
+  ],
+  "settings": {
+    "theme": "dark",
+    "language": "zh-CN",
+    "notifications": true,
+    "timestamp": "2025-10-13T07:48:29.676950Z",
+    "encrypted_data": "APz1JU9BzYISjPhj2+Q2vgOVStIgKcbW6T+q751EX78+twLS9HaSCSY6zCfMsaFyMO67XpRaxX6+ytKEPyMNOqFSGtTtA+iLRM6KszcChr9kUnifNzZNJvz5q1TwUdXvjZ0Dwgkrw7VQ/ZoyWWYQGELQo5IiS9KAd57Yu5JuoESNCcyzqSBWdsczHUgWWNcwlYYSa+gKr/V4XJEs2e5SDBrGMtdVRGLZ8aK87yam5sFF7H4YX8mIhMJtUGJsh6A1BOGJu5b1tPayG173U//zzxd7K6Sv2/YD1U3I7ZoTwXaJt3XDMZ3n7R3J3+uXFcOG3P70htMahdD5B8uRg7ZQMw=="
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2025-01-01",
+    "timestamp": "2025-10-13T07:48:29.676950Z",
+    "encrypted_data": "D6TyPzw8BNJboypTJ091G1zMF6Jeyaa4Y8wq1LmtrnHHRRRNciG6UbDdUMl70O1womXrRdT4Cd4/SxPKRaTXAqWpn8HTSu25tlJGD8JAFC/1wFF7F1xlB041Og202TXv0VVQyK1sJ5WVL/Ax3Cw0c+2vh59njdhsX8bA6P9lRlBXU86Fps4+BHnuxGmhvM7JQFpQTVCgLw3V/L0lr+wmDmixsxrl0636liOlZY4gwc8Kv3+mm80il6JKDe7N+DTprp9K5mDetarssmABQGcOrj2IMDOoGJEGn9/YTcaXJ0rayGQrbtTm1iYVK+Oj/KgU2GuBruw23H/mQ91Xlts24w=="
+  },
+  "timestamp": "2025-10-13T07:48:29.675952Z",
+  "data_hash": "yVp4P+tv/OQmw5mop6f9BfJqq8NGAQgmRIJIvE5oniHkcvRybhEo1Ur0FiVfMeT6FtX7w7EwK4vujM0vo0iaohtdEByvXp86CH7Qqeq7OAzjivMOod2SZXCzp6inRQdAwXRxb5fH0bHs0pAwPHBTBzL99rBeiNfymrDytt7h74hqgnz/0KF5caf2gx7qpfVfb1GCWNLHhIwCR3IjcS5SDNrdBnQEotS27hBVcTN7po1DJhX2tZzualBujHiwcjvATih6XCWO+7MPtAvHffUKHWhyIEGUGoVxDYBIrFxGJrdo4l8T8yTz/qOnQE9XJ/8hTLFnk6yAZWbvPDlKFEzOOQ=="
+}
