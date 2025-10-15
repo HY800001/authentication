@@ -94,11 +94,11 @@ def process_json_files():
                 "signature": signature,
                 "signature_algorithm": "RSA-PSS-SHA256"
             }
-            
+
             output_data["text"] = json.dumps(data, sort_keys=True)
             # 生成输出文件名
             base_name = os.path.splitext(os.path.basename(json_file))[0]
-            output_file = f"./autograph/{base_name}.json"
+            output_file = f"./autograph/{base_name}_sign.json"
             
             # 写入签名后的文件
             with open(output_file, 'w', encoding='utf-8') as f:
