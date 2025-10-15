@@ -2,6 +2,7 @@
 import os
 import json
 import base64
+import time
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.backends import default_backend
@@ -98,7 +99,7 @@ def process_json_files():
 
             # 生成输出文件名
             base_name = os.path.splitext(os.path.basename(json_file))[0]
-            output_file = f"./autograph/{base_name}_sign.json"
+            output_file = f"./autograph/{base_name}.json"
             
             # 写入签名后的文件
             with open(output_file, 'w', encoding='utf-8') as f:
