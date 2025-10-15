@@ -25,6 +25,15 @@ def load_private_key(password=None):
             )
     return private_key
 
+def load_public_key():
+    """加载RSA公钥"""
+    with open("./keys/public.pem", "rb") as key_file:
+        public_key = serialization.load_pem_public_key(
+            key_file.read(),
+            backend=default_backend()
+        )
+    return public_key
+
 def sign_data(private_key, data):
     """使用RSA私钥对数据进行签名"""
     if isinstance(data, str):
@@ -57,6 +66,11 @@ def process_json_files():
         print(f"Error loading private key: {e}")
         return
     
+    #写出公钥
+    with open("./keys/public.pem", "rb") as src, open("./autograph/public.pem", "wb") as dst:
+        dst.write(src.read())
+
+
     # 查找所有JSON文件
     json_files = glob.glob("./data/*.json")
     
@@ -75,16 +89,15 @@ def process_json_files():
             
             # 创建输出数据结构
             output_data = {
-                "original_file": os.path.basename(json_file),
                 "data": data,
                 "signature": signature,
                 "signature_algorithm": "RSA-PSS-SHA256",
-                "timestamp": os.path.getmtime(json_file)
+                "timestamp": time.time()
             }
             
             # 生成输出文件名
             base_name = os.path.splitext(os.path.basename(json_file))[0]
-            output_file = f"./autograph/{base_name}_signed.json"
+            output_file = f"./autograph/{base_name}.json"
             
             # 写入签名后的文件
             with open(output_file, 'w', encoding='utf-8') as f:
