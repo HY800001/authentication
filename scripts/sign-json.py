@@ -84,7 +84,7 @@ def process_json_files():
         try:
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            data["timestamp"] = time.time()
+            data["timestamp"] = int(time.time())
             
             # 生成签名
             signature = sign_data(private_key, json.dumps(data, sort_keys=True))
