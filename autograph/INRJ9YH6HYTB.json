@@ -1,0 +1,12 @@
+{
+  "data": {
+    "name": "示例数据1",
+    "id": "INRJ9YH6HYTB",
+    "time": "2024-01-01",
+    "created": "2024-01-01",
+    "timestamp": 1760500010.9629092
+  },
+  "signature": "JHUpuFi1jPHo1/Y/OhYI05xUMwbhRR3V47jBMXCx9TbXZXf/+qB7YTyPPc54puX5HI4szMaokBXSr+5AJ7zxDBa5GMOvJuNkUfVf/Q6RIhg6JWBHW4nm9BdqLHV+PvcN5yXBbi3ryP6qDsuQJAa/MZC5DRhiTOGPGDubcOgeIjIMPQ+RaiBxjm6paDmEUEI+Hc4Qvav+2CyC1zklrZHuSUQY6cygn9l4088wTokRzRnGnOpgye7lUI5UOj4dI0XqPkZKeFztPdim4ZEBUohvQgv4NuCAtlflB8WqWiaS4EkTEQ1t60miQZqf4scykhLrdV0hn0HX9ZIMWYqLvbra6A==",
+  "signature_algorithm": "RSA-PSS-SHA256",
+  "text": "{\"created\": \"2024-01-01\", \"id\": \"INRJ9YH6HYTB\", \"name\": \"\\u793a\\u4f8b\\u6570\\u636e1\", \"time\": \"2024-01-01\", \"timestamp\": 1760500010.9629092}"
+}
