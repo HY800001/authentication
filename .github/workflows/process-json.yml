@@ -54,17 +54,17 @@ jobs:
             echo "⚠ 未找到公钥，将生成新密钥对"
           fi
       
-      - name: 从 Secrets 恢复公钥（如果存在）
-        if: steps.check-keys.outputs.has_key == 'false'
-        env:
-          PUBLIC_KEY: ${{ secrets.RSA_PUBLIC_KEY }}
-        run: |
-          if [ ! -z "$PUBLIC_KEY" ]; then
-            echo "$PUBLIC_KEY" > public_key.pem
-            echo "✓ 已从 GitHub Secrets 恢复公钥"
-          else
-            echo "⚠ GitHub Secrets 中未配置公钥，将生成新密钥"
-          fi
+      # - name: 从 Secrets 恢复公钥（如果存在）
+      #   if: steps.check-keys.outputs.has_key == 'false'
+      #   env:
+      #     PUBLIC_KEY: ${{ secrets.RSA_PUBLIC_KEY }}
+      #   run: |
+      #     if [ ! -z "$PUBLIC_KEY" ]; then
+      #       echo "$PUBLIC_KEY" > public_key.pem
+      #       echo "✓ 已从 GitHub Secrets 恢复公钥"
+      #     else
+      #       echo "⚠ GitHub Secrets 中未配置公钥，将生成新密钥"
+      #     fi
       
       - name: 处理 JSON 文件
         env:
