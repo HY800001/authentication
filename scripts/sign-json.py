@@ -84,6 +84,7 @@ def process_json_files():
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             data["timestamp"] = time.time()
+            
             # 生成签名
             signature = sign_data(private_key, json.dumps(data, sort_keys=True))
             
@@ -94,6 +95,7 @@ def process_json_files():
                 "signature_algorithm": "RSA-PSS-SHA256"
             }
             
+            output_data["text"] = json.dumps(data, sort_keys=True)
             # 生成输出文件名
             base_name = os.path.splitext(os.path.basename(json_file))[0]
             output_file = f"./autograph/{base_name}.json"
