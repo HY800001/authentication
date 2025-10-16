@@ -3,6 +3,7 @@ import os
 import json
 import base64
 import time
+import shutil
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.backends import default_backend
