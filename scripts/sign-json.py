@@ -56,7 +56,8 @@ def process_json_files():
     """处理所有JSON文件并生成签名"""
     # 创建输出目录
     # if os.path.exists("./autograph"):
-    shutil.rmtree("./autograph")
+    # shutil.rmtree("./autograph")
+    os.system("rm -r ./autograph")
     os.makedirs("./autograph", exist_ok=True)
     
     # 获取密码
