@@ -93,7 +93,7 @@ def process_json_files():
             
             # 创建输出数据结构
             output_data = {
-                "data": data,
+                # "data": data,
                 "signature": signature,
                 "text": json.dumps(data, sort_keys=True)
             }
