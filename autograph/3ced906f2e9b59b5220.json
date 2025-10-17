@@ -1,9 +1,4 @@
 {
-  "data": {
-    "UID": "3ced906f2e9b59b5220",
-    "endtime": "2025-12-01",
-    "timestamp": 1760681967
-  },
-  "signature": "Z4/HA6SN5jZ193lKVpd2XQXr+p0dosQhIoIdLUJFOSw7O3BJw317DHEJlRvkXrKtniXM0yII8erg6zopVjUnZlh+5x0xUbXuU4zQ7qSx9JxJGkeaYLpOR3TUXjKgqrRbWF328s6P8tSu2nmDNERTCAN7/DmTpGcKSX32h/+yQjcW7/F30Z5NAekt/tWLCxOE9ivtPlkq1PKp02QhnLnQavbUP1OuqOmgqvMUJtFupBnms88zVE0tZMN5444PMIQLhM348uRIJcL0vPfK4g82CWpBRUFpBdV5SRhWaMqEq8dHgdLN916rdqr10rstDkt1qeeFXsBk6R9WquDh/26NEA==",
-  "text": "{\"UID\": \"3ced906f2e9b59b5220\", \"endtime\": \"2025-12-01\", \"timestamp\": 1760681967}"
+  "signature": "nyGxVeylZurBjMMRw7Cah7tEsUp5lT4+YH0QnwrrW/8XQ7enkWN2Evdhj6ZC1LNI5HJnTbCAvgfKncWO1DzMi6nz8XQAMHa1Sm3UcfAYLUXF7iTk3PDO8D1mzMK0XHf2wf2CaNrC5WrxE1TdMjrszf4kmVCPubGI/VhfJ3q4G4ahjrUtxdV8VnSeH2uYt9kRq+ak2irMaybD8l/86yaYpvGN44rCaCv6pZcNmnAjt3E2GXRDn5QelJr7578pnhG+0wNOeaBvNfldZJ0wSFUnDzrWL6VJpbPQYZycNXGH+aK/qe7NKPbcNRaeQHW0QE6Mupo1RW2yIdgjVQQcTgb9XA==",
+  "text": "{\"UID\": \"3ced906f2e9b59b5220\", \"endtime\": \"2025-12-01\", \"endtimestamp\": 1765348227, \"timestamp\": 1760704180}"
 }
