@@ -95,7 +95,6 @@ def process_json_files():
             output_data = {
                 "data": data,
                 "signature": signature,
-                "signature_algorithm": "RSA-PSS-SHA256",
                 "text": json.dumps(data, sort_keys=True)
             }
 
