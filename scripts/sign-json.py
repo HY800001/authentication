@@ -70,8 +70,8 @@ def process_json_files():
         return
     
     #写出公钥
-    with open("./keys/public.pem", "rb") as src, open("./autograph/public.pem", "wb") as dst:
-        dst.write(src.read())
+    # with open("./keys/public.pem", "rb") as src, open("./autograph/public.pem", "wb") as dst:
+    #     dst.write(src.read())
 
 
     # 查找所有JSON文件
