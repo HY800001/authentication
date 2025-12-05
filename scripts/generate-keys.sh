@@ -8,7 +8,7 @@ PUBLIC_KEY="$KEY_DIR/public.pem"
 mkdir -p $KEY_DIR
 
 # 如果密钥不存在，则生成新的RSA密钥对
-if [ ! -f "$PRIVATE_KEY" ] || [ ! -f "$PUBLIC_KEY" ]; then
+if [ ! -f "$PRIVATE_KEY" ] && [ ! -f "$PUBLIC_KEY" ]; then
     echo "Generating new RSA key pair..."
     
     # 生成私钥（使用密码保护）
