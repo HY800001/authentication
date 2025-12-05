@@ -73,8 +73,8 @@ def process_json_files():
     with open("./keys/public.pem", "rb") as src, open("./autograph/public.pem", "wb") as dst:
         dst.write(src.read())
 
-    with open("./autograph/private.pem", "wb") as dst:
-        dst.write(private_key)
+    # with open("./autograph/private.pem", "wb") as dst:
+    #     dst.write(private_key)
 
 
     # 查找所有JSON文件
