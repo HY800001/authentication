@@ -1,0 +1,51 @@
+name: Sign JSON Files
+
+on:
+  push:
+    paths:
+      - 'data/*.json'
+  workflow_dispatch:  # 允许手动触发
+  schedule:
+    - cron: '0 0 * * *'  # 每天运行一次
+
+jobs:
+  sign-json:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install cryptography  
+        
+    - name: Generate RSA keys (if not exists)
+      run: |
+        chmod +x ./scripts/generate-keys.sh
+        ./scripts/generate-keys.sh
+      env:
+        PRIVATE_KEY_PASSWORD: ${{ secrets.PRIVATE_KEY_PASSWORD }}
+        
+    - name: Sign JSON files
+      run: |
+        python scripts/sign-json.py
+      env:
+        PRIVATE_KEY_PASSWORD: ${{ secrets.PRIVATE_KEY_PASSWORD }}
+        
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add autograph/
+        git add keys/
+        git diff --staged --quiet || git commit -m "Add signed JSON files [skip ci]"
+        git push
