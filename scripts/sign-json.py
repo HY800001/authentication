@@ -69,9 +69,9 @@ def process_json_files():
         print(f"Error loading private key: {e}")
         return
     
-    # 写出公钥
-    with open("./keys/public.pem", "rb") as src, open("./autograph/public.pem", "wb") as dst:
-        dst.write(src.read())
+    # # 写出公钥
+    # with open("./keys/public.pem", "rb") as src, open("./autograph/public.pem", "wb") as dst:
+    #     dst.write(src.read())
 
     # 查找所有JSON文件
     json_files = glob.glob("./data/*.json")
